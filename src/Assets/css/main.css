@@ -1,0 +1,28 @@
+@import "./variables.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+}
+
+.font-1 {
+  font-family: "Noticia Text", serif;
+}
+.font-2 {
+  font-family: "Questrial", sans-serif;
+}
+
+a {
+  font-family: "Questrial", sans-serif;
+  color: var(--link-color);
+}

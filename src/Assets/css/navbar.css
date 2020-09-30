@@ -1,0 +1,92 @@
+.navbar {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.navbar header {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding: 1.75rem 0 1rem;
+}
+
+.navbar nav {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.navbar nav .icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.navbar nav .icons svg {
+  fill: var(--primary-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: var(--primary-bg-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.navbar nav .icons svg:hover,
+.navbar nav .icons svg:focus {
+  fill: var(--secondary-color);
+}
+
+.navbar nav .navigations {
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav .navigations ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar nav .navigations ul li {
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.navbar nav .navigations ul li:hover,
+.navbar nav .navigations ul li:focus,
+.navbar nav .navigations ul li.active {
+  color: var(--text-color-active);
+}
+
+.navbar nav .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar nav .actions .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.navbar nav .actions .login svg {
+  fill: var(--primary-bg-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  stroke-width: 0;
+  background: var(--primary-color);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
